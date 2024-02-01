@@ -17,7 +17,7 @@ chmod 777 "${SYSTEMD_DIR}/theme-switching."*
 
 # Copy the theme-switcher.sh file to /usr/local/bin and change perms
 cp "${CWD}/theme-switcher.sh" "${BIN_DIR}/"
-chmod +x "${BIN_DIR}/theme-switcher.sh"
+chmod 777 "${BIN_DIR}/theme-switcher.sh"
 
 # Reload systemd configurations
 TIMER_UNIT_NAME="theme-switching.timer"
